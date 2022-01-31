@@ -170,7 +170,9 @@ body {
     url(../images/hero-picture.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+  background-size: cover;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -239,7 +241,7 @@ body {
   margin-bottom: 30px;
 }
 
-.features-icon .features-item-title {
+.features-item-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -351,6 +353,8 @@ img {
 .team-socials-list {
   display: flex;
   justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-socials-item + .team-socials-item {
@@ -438,6 +442,7 @@ img {
 
 .footer-parts {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -481,11 +486,13 @@ img {
 }
 
 .footer-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 70px;
-  margin-top: 12px;
 }
 
-.footer-title {
+.footer-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
